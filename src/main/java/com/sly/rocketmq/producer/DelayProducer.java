@@ -45,7 +45,7 @@ public class DelayProducer extends DefaultMQProducer {
     }
 
     /**
-     * 延时小于10s分钟的 不支持，可以设置强制参数来支持，但是会有误差
+     * 延时小于10s的 不支持
      */
     public SendResult sendDelay(DataModel dataModel, Date startSendTime) throws InterruptedException, RemotingException, MQClientException, MQBrokerException {
         long duration = Duration.between(Instant.now(), startSendTime.toInstant()).getSeconds();
