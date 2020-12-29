@@ -10,7 +10,7 @@ public class RocketMqConstant {
     /**
      * NameServer地址,个地址以;隔开
      */
-    public static final String NAME_SERVER = "192.168.100.101:9876";
+    public static final String NAME_SERVER = "192.168.0.123:9876";
     /**
      * DEMO生产者的组名
      */

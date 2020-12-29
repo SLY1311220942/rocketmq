@@ -78,7 +78,6 @@ public class DemoController {
         dataModel.setTags(userId);
         dataModel.setTopic(RocketMqConstant.DEMO_TOPIC);
         delayProducer.sendDelay(dataModel, delayDate);
-
         return "发送成功！";
     }
 }
